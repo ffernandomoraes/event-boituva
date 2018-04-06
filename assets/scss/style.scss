@@ -16,15 +16,17 @@ header {
 
     h2 {
         font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        width: 50%;
+        margin: 0 auto;
     }
 
     h3 {
         font-size: 1.2rem;
         line-height: 1.2rem;
-        color: #f3f3f3;
-        font-weight: 300;
+        color: #f9f9f9;
+        font-weight: 400;
     }
 }
 
@@ -39,7 +41,7 @@ a.header__button {
     color: #fff;
     border: 0;
     font-size: 1rem;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid transparent;
     transition: 0.2s;
     cursor: pointer;
@@ -123,6 +125,5 @@ a.header__button {
 #map {
     height: 300px;
     width: 100%;
-    border: 2px solid $color-secundary;
     border-radius: 5px;
 }
