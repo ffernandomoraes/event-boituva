@@ -149,6 +149,75 @@ a.header__button {
     border-radius: 5px;
 }
 
-.henrique {
-    display: flex;
+.timeline {
+    background: #f3f3f3;
+    padding: 3rem 0;
+    position: relative;
+    height: 100%;
+
+    &__item {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding-bottom: 2rem;
+
+        &:last-child {
+            .timeline__text {
+                &:after {
+                    height: 0;
+                }
+            }
+        }
+    }
+
+    &__hours {
+        width: auto;
+        display: inline-block;
+        float: left;
+        width: auto;
+        margin-top: 0.25rem;
+        font-weight: 700;
+        min-width: 72px;
+    }
+
+    &__divider {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        z-index: 2;
+        border: 5px solid #f3f3f3;
+        background: $color-primary;
+        margin-right: 2rem;
+        display: inline-block;
+        float: left;
+        border-radius: 100%;
+    }
+
+    &__text {
+        display: inline-block;
+        width: 400px;
+        background: $color-primary;
+        position: relative;
+        padding: 15px;
+        color: #fff;
+        font-size: 0.875rem;
+        letter-spacing: 0.5px;
+        border-radius: 10px;
+
+        b {
+            display: block;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: 4px;
+            height: calc(100% + 2rem);
+            z-index: 1;
+            background: $color-primary;
+            position: absolute;
+            top: 2px;
+            left: -46px;
+        }
+    }
 }
