@@ -4,7 +4,7 @@
 @import './generic';
 
 header {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
     color: #fff;
     text-align: center;
 
@@ -17,16 +17,17 @@ header {
     h2 {
         font-weight: 400;
         font-size: 1.1rem;
-        line-height: 1.4rem;
+        line-height: 1.5rem;
         width: 50%;
         margin: 0 auto;
+        letter-spacing: 1px;
     }
 
     h3 {
         font-size: 1.2rem;
         line-height: 1.2rem;
         color: #f9f9f9;
-        font-weight: 400;
+        font-weight: 600;
     }
 }
 
@@ -96,12 +97,32 @@ a.header__button {
         .speaker__description {
             font-size: 0.9rem;
             line-height: 1.2rem;
+            letter-spacing: 0.5px;
         }
 
         .speaker__links {
             a {
                 display: inline-block;
-                margin: 0 5px;
+                color: $button-action;
+                margin: 0 2px;
+
+                &:first-child {
+                    i{
+                        position: relative;
+                        top: 1px;
+                    }
+                }
+
+                i {
+                    color: $button-action;
+                    font-size: 1rem;
+                    padding: 5px;
+                    border-radius: 100%;
+
+                    &:hover {
+                        background: #ccc;
+                    }
+                }
             }
         }
     }
@@ -126,4 +147,8 @@ a.header__button {
     height: 300px;
     width: 100%;
     border-radius: 5px;
+}
+
+.henrique {
+    display: flex;
 }
